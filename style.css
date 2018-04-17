@@ -2,7 +2,7 @@
 
 html {
   font-size: 10px;
-  background: url(https://images.pexels.com/photos/241687/pexels-photo-241687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) bottom center;
+  background: url('https://images.pexels.com/photos/730656/pexels-photo-730656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') bottom center;
   background-size: cover;
 }
 body,html {
