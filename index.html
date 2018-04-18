@@ -47,6 +47,8 @@
     </button>
   </div>
 
+  <footer>&copy; 2018 Copyright: <a href="www.bentaylor.io">bentaylor.io</a></footer>
+
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
   <audio data-key="68" src="sounds/kick.wav"></audio>
@@ -57,16 +59,7 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-  <div class="nav">
-    <ul>
-      <li><a href="https://github.com/bentaylorio"><img src="img/github.png" alt=""></a></li>
-      <li><a href="https://www.linkedin.com/in/benjamin-taylor-73702469/"><img src="img/linkedin.png" alt=""></a></li>
-    </ul>
-  </div>
-<footer>&copy; 2018 Copyright: <a href="www.bentaylor.io">bentaylor.io</a></footer>
-
 <script>
-
 const playSound = e => {
       let keyCode;
       if (e.type === 'keydown') {
@@ -76,29 +69,22 @@ const playSound = e => {
       }
       const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
       const key = document.querySelector(`button[data-key="${keyCode}"]`);
-
       if (!audio) return;
-
       key.classList.add('playing');
       audio.currentTime = 0;
       audio.play();
     }
-
     const removeTransition = e => {
       if (e.propertyName !== 'transform') return;
       e.target.classList.remove('playing');
     }
-
     const keys = Array.from(document.querySelectorAll('.key'));
     keys.forEach(key => {
       key.addEventListener('transitionend', removeTransition)
-      button:focus {outline:0;}
     });
-
     window.addEventListener('keydown', playSound);
     window.addEventListener('touchstart', playSound);
     window.addEventListener('click', playSound);
-
 </script>
 
 

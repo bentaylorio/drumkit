@@ -58,23 +58,6 @@ kbd {
   font-family: 'Tajawal', sans-serif;
 }
 
-.nav {
-  padding-top: 50px;
-  width: 100%;
-  text-align: center;
-}
-
-.nav li {
-  display: inline-block;
-  margin: 0px 27px 0px -25px;
-}
-
-.nav li:hover {
-  background-color: #ff9934;
-  border: 2px solid black;
-  border-radius: .5rem;
-}
-
 footer {
   width: 100%;
   text-align: center;
