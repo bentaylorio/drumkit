@@ -57,6 +57,8 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
+<footer>&copy; 2018 Copyright: <a href="www.bentaylor.io">bentaylor.io</a></footer>
+
 <script>
 
 const playSound = e => {
@@ -84,6 +86,7 @@ const playSound = e => {
     const keys = Array.from(document.querySelectorAll('.key'));
     keys.forEach(key => {
       key.addEventListener('transitionend', removeTransition)
+      button:focus {outline:0;}
     });
 
     window.addEventListener('keydown', playSound);
